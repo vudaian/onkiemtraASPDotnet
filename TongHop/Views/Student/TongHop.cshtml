@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "TongHop";
+}
+
+<h1 class="text-center">Tổng hợp</h1>
+
+<h4>Các cách lấy dữ liệu từ form</h4>
+<ul class="list-group">
+    <li>Tiếp nhận tham số</li>
+    <li>Sử dụng IFormCollection</li>
+    <li>Sử dụng đối số Action, chỉ nhận các tham số trùng tên</li>
+    <li>Sử dụng model</li>
+</ul>
+<hr />
+
+<h4>Các cách hiển thị dữ liệu</h4>
+<ul class="list-group">
+    <li>Sử dụng như bình thường</li>
+    <li>Sử dụng RazorHelper</li>
+    <li>Sử dụng RazorTagHelper</li>
+</ul>
+
+<hr />
+<h4>Các kiểu dữ liệu trả về của action</h4>
+<ul class="list-group">
+    <li>ContentResult: Trả về 1 chuỗi, hàm sử dụng là content</li>
+    <li>RedirectToActionResult: chuyển sang 1 action hoặc 1 action của controller khác, hàm sử dụng RedirectToAction</li>
+    <li>RedirectResult: trả về 1 URL khác, hàm sử dụng Redirect()</li>
+    <li>ViewResult: Trả về view  khác để hiển thị, hàm sử dụng View()</li>
+    <li>JsonResult: trả về dữ liệu dạng Json, hàm sử dụng là Json()</li>
+    <li>Trả về kiểu nguyên thủy: int, float, ...</li>
+</ul>

@@ -1,0 +1,33 @@
+﻿@model List<TongHop.Models.Student>
+@{
+    ViewData["Title"] = "ShowStudent";
+}
+
+<h1>Danh sach sinh vien</h1>
+
+@* Sử dụng liên kết thường dùng *@
+<a href="/Student/Add" class="btn btn-link">Thêm mới</a>
+
+@* Sử dụng liên kết Html helper *@
+@Html.ActionLink("Submit", "Add", "Student", null, new { @class = "btn btn-link" })
+
+<table class="table table-bordered">
+    <thead>
+    <th>Mã sinh viên</th>
+    <th>Họ tên</th>
+    <th>Tên lớp</th>
+    <th>Địa chỉ</th>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>@item.ClassName</td>
+                <td>@item.Address</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
